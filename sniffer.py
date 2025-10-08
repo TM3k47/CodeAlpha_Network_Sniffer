@@ -18,10 +18,14 @@ class Colors:
 
 def get_protocol_name(protocol_number):
     """Get protocol name from its number."""
-    try:
-        return socket.getprotobynumber(protocol_number).replace("proto_", "")
-    except OSError:
-        return "Unknown"
+    protocol_map = {
+        1: "ICMP",
+        6: "TCP",
+        17: "UDP",
+        41: "IPv6",
+        89: "OSPF",
+    }
+    return protocol_map.get(protocol_number, "Unknown")
 
 def packet_handler(packet):
     """Processes each captured packet."""
