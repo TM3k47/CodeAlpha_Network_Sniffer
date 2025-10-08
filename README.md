@@ -23,7 +23,7 @@ This script captures network packets on a specified interface and displays infor
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/your-username/CodeAlpha_Network_Sniffer.git
+    git clone https://github.com/or3ki-01xs/CodeAlpha_Network_Sniffer.git
     cd CodeAlpha_Network_Sniffer
     ```
 
@@ -49,17 +49,17 @@ sudo python3 sniffer.py [OPTIONS]
 
 -   Capture packets on the default interface (`wlan0`):
     ```bash
-sudo python3 sniffer.py
+    sudo python3 sniffer.py
     ```
 
 -   Capture packets on a specific interface (e.g., `eth0`):
     ```bash
-sudo python3 sniffer.py -i eth0
+    sudo python3 sniffer.py -i eth0
     ```
 
 -   Capture a specific number of packets (e.g., 10):
     ```bash
-sudo python3 sniffer.py -c 10
+    sudo python3 sniffer.py -c 10
     ```
 
 ## Example Output
@@ -69,8 +69,8 @@ sudo python3 sniffer.py -c 10
 [*] Press Ctrl+C to stop.
 [2025-10-08 10:30:01] Source: 192.168.1.10 -> Destination: 1.1.1.1 | Protocol: UDP
     UDP Packet: Source Port: 53 | Destination Port: 54321
-    Payload: b'...' 
+    Payload: b'\\x12\\x34\\x01\\x00\\x00\\x01\\x00\\x00\\x00\\x00\\x00\\x00\\x07example\\x03com\\x00\\x00\\x01\\x00\\x01'
 [2025-10-08 10:30:02] Source: 192.168.1.10 -> Destination: 93.184.216.34 | Protocol: TCP
     TCP Packet: Source Port: 12345 | Destination Port: 80
-    Payload: b'GET / HTTP/1.1\r\nHost: example.com\r\n...'
+    Payload: b'GET / HTTP/1.1\\r\\nHost: example.com\\r\\n...'
 ```
