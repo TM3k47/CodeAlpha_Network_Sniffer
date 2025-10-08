@@ -23,7 +23,7 @@ This script captures network packets on a specified interface and displays infor
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/or3ki-01xs/CodeAlpha_Network_Sniffer.git
+    git clone https://github.com/TM3k47/CodeAlpha_Network_Sniffer.git
     cd CodeAlpha_Network_Sniffer
     ```
 
